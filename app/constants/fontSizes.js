@@ -1,4 +1,4 @@
 export const fontSizes = {
-    title: 24,
+    appName: 24,
     splashTitle: 48,
-}
+};

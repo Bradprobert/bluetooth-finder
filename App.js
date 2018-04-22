@@ -10,7 +10,6 @@ YellowBox.ignoreWarnings([
     'Warning: componentWillReceiveProps is deprecated',
 ]);
 
-
 export default class App extends Component {
     render() {
         return (

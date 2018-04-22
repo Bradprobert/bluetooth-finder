@@ -1,3 +1,3 @@
 export const fonts = {
-    title: 'Pathway Gothic One',
-}
+    appName: 'Pathway Gothic One',
+};

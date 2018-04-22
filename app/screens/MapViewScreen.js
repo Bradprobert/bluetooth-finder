@@ -3,6 +3,12 @@ import {Text, View, StyleSheet, Button} from "react-native";
 import MapView from 'react-native-maps';
 import ActionButton from 'react-native-action-button';
 import Icon from 'react-native-vector-icons/Ionicons';
+import {YellowBox} from 'react-native';
+
+YellowBox.ignoreWarnings([
+    'Warning: componentWillMount is deprecated',
+    'Warning: componentWillReceiveProps is deprecated',
+]);
 
 const styles = StyleSheet.create({
     container: {
@@ -31,9 +37,9 @@ const styles = StyleSheet.create({
 export default class MapViewScreen extends Component {
 
     onGetLocatition = () => {
-        currPosition = navigator.geolocation.getCurrentPosition();
+        let currPosition = navigator.geolocation.getCurrentPosition();
         console.log(currPosition)
-    }
+    };
 
     render() {
         return (
@@ -41,15 +47,11 @@ export default class MapViewScreen extends Component {
                 <MapView style={styles.map}
                          initialRegion={{
                              latitude: 31.245709,
-                             longitude:  -85.619063,
+                             longitude: -85.619063,
                              latitudeDelta: 0.0922,
                              longitudeDelta: 0.0421,
                          }}
                 />
-                <ActionButton.Item buttonColor='#1abc9c' title="All Tasks" onPress={() => {}}>
-                    <Icon name="md-done-all" style={styles.actionButtonIcon} />
-                </ActionButton.Item>
-
             </View>
         );
     }

@@ -31,8 +31,8 @@ export const MainNavigator = StackNavigator({
                         },
                         headerTitleStyle: {
                             color: colors.white,
-                            fontFamily: fonts.title,
-                            fontSize: fontSizes.title,
+                            fontFamily: fonts.appName,
+                            fontSize: fontSizes.appName,
                         }
                     }
                 },
@@ -93,16 +93,16 @@ export const MainNavigator = StackNavigator({
                             }
                         }),
                     navigationOptions: {
-                        title: strings.title,
+                        title: strings.appName,
                         headerStyle: {
                             backgroundColor: colors.primaryBlue,
                         },
                         headerTitleStyle: {
                             color: colors.white,
-                            fontFamily: fonts.title,
-                            fontSize: fontSizes.title,
+                            fontFamily: fonts.appName,
+                            fontSize: fontSizes.appName,
                         }
-                    }
+                    },
                 },
             }),
             navigationOptions: {

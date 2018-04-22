@@ -13,7 +13,7 @@ export default StyleSheet.create({
     splashTitle: {
         color: colors.white,
         fontSize: fontSizes.splashTitle,
-        fontFamily: fonts.title,
+        fontFamily: fonts.appName,
     }
 });
 
